@@ -17,10 +17,10 @@ else:
     lastMonth = currentMonth-1
 
 
-smtpServer = 'intramail.cis.cat.com'  # SMTP server that handles email requests
+smtpServer = '*****.****.cat.com'  # SMTP server that handles email requests
 host = commands.getoutput('hostname')
 fromaddr = 'Latest query report' + '@' + host
-toaddr=['S_sachin@cat.com']
+toaddr=['******@cat.com']
 subj = 'Latest query report for '+str(currentYear)+'-'+str(lastMonth)
 
 fpath = '/tardis2/sachin/sqldb_report_log' #A file located in tardis mount to log the report generation
