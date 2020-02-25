@@ -8,8 +8,8 @@ hostname = commands.getoutput('hostname -a')
 hostname1 = commands.getoutput('hostname')
 certificate = hostname1+'.pfx'
 environment = 'test'
-cert_dir1 = '/tardis2/ssl_certificates/'+environment
-cert_dir2 = '/tardis2/sachin/certificates/PROD/certificates/'+environment
+cert_dir1 = '/tardis2/ssl_certificates/'+environment #source directory where raw SSL certificates are located
+cert_dir2 = '/tardis2/sachin/certificates/PROD/certificates/'+environment #destination directory where key, cert, crt files will be extracted to
 
 
 print "Certificate name is "+certificate
